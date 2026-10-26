@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8"/>
+     <meta name="description" content="DC test"/>   
+    <title>DC Test</title> 
+    </head>
+    <body style="background-color: black; ">
+        <font color="white"><h1>DC Test</h1>
+
+        <form>
+            <fieldset>
+                <legend>Question 1: Who is Batman's real name? (one answer)</legend>
+                <input type="radio" id="q1a" name="q1" value="clark">
+                <label for="q1a">Clark Kent</label><br>
+                <input type="radio" id="q1b" name="q1" value="bruce">
+                <label for="q1b">Bruce Wayne</label><br>
+                <input type="radio" id="q1c" name="q1" value="barry">
+                <label for="q1c">Barry Allen</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Question 2: Which of these are DC heroes? (many answers)</legend>
+                <input type="checkbox" id="q2a" name="q2" value="superman">
+                <label for="q2a">Superman</label><br>
+                <input type="checkbox" id="q2b" name="q2" value="flash">
+                <label for="q2b">The Flash</label><br>
+                <input type="checkbox" id="q2c" name="q2" value="ironman">
+                <label for="q2c">Iron Man</label><br>
+                <input type="checkbox" id="q2d" name="q2" value="aquaman">
+                <label for="q2d">Aquaman</label>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Question 3: Choose from a list</legend>
+                <label for="q3">Which city does Batman protect?</label>
+                <select id="q3" name="q3">
+                    <option value="">-- Choose --</option>
+                    <option value="metropolis">Metropolis</option>
+                    <option value="gotham">Gotham City</option>
+                    <option value="central">Central City</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Question 4: Short answer</legend>
+                <label for="q4">What is the name of Superman's home planet?</label>
+                <br>
+                <input type="text" id="q4" name="q4">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Question 5: Rate and choose</legend>
+                <label for="q5">How much do you like DC (0 to 10)?</label>
+                <input type="range" id="q5" name="q5" min="0" max="10" value="5">
+                <br><br>
+                <label for="q6">Favorite color:</label>
+                <input type="color" id="q6" name="q6" value="#0000ff">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Question 6: Long answer</legend>
+                <label for="q7">Why is your favorite hero your favorite?</label>
+                <br>
+                <textarea id="q7" name="q7" rows="5" cols="40"></textarea>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Extras</legend>
+                <label for="photo">Upload your fan art:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <br><br>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree to submit my answers</label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </form></font>
+         
+    </body>
+</html>
